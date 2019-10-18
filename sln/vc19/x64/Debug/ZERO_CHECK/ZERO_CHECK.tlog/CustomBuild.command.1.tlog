@@ -1,0 +1,10 @@
+^C:\USERS\VLADO\DESKTOP\MYLAB\MP2-LAB1-SET\SLN\VC19\CMAKEFILES\4A73D7D63CBBDFF7BC569E6C409AD564\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/vlado/Desktop/mylab/mp2-lab1-set -BC:/Users/vlado/Desktop/mylab/mp2-lab1-set/sln/vc19 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/vlado/Desktop/mylab/mp2-lab1-set/sln/vc19/set.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

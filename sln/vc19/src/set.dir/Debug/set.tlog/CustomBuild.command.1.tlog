@@ -1,0 +1,10 @@
+^C:\USERS\VLADO\DESKTOP\MYLAB\MP2-LAB1-SET\SRC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/vlado/Desktop/mylab/mp2-lab1-set -BC:/Users/vlado/Desktop/mylab/mp2-lab1-set/sln/vc19 --check-stamp-file C:/Users/vlado/Desktop/mylab/mp2-lab1-set/sln/vc19/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
